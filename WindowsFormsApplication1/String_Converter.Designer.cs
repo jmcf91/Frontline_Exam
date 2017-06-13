@@ -30,8 +30,8 @@
         {
             this.btnPrint = new System.Windows.Forms.Button();
             this.lstBxResults = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblString = new System.Windows.Forms.Label();
+            this.lblInstructions = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPrint
@@ -52,31 +52,31 @@
             this.lstBxResults.Size = new System.Drawing.Size(179, 121);
             this.lstBxResults.TabIndex = 1;
             // 
-            // label1
+            // lblString
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(351, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "\"(id,created,employee(id,firstname,employeeType(id), lastname),location)\"";
+            this.lblString.AutoSize = true;
+            this.lblString.Location = new System.Drawing.Point(56, 54);
+            this.lblString.Name = "lblString";
+            this.lblString.Size = new System.Drawing.Size(351, 13);
+            this.lblString.TabIndex = 2;
+            this.lblString.Text = "\"(id,created,employee(id,firstname,employeeType(id), lastname),location)\"";
             // 
-            // label2
+            // lblInstructions
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(161, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Click Print to convert:";
+            this.lblInstructions.AutoSize = true;
+            this.lblInstructions.Location = new System.Drawing.Point(161, 41);
+            this.lblInstructions.Name = "lblInstructions";
+            this.lblInstructions.Size = new System.Drawing.Size(108, 13);
+            this.lblInstructions.TabIndex = 3;
+            this.lblInstructions.Text = "Click Print to convert:";
             // 
             // String_Converter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 283);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblInstructions);
+            this.Controls.Add(this.lblString);
             this.Controls.Add(this.lstBxResults);
             this.Controls.Add(this.btnPrint);
             this.Name = "String_Converter";
@@ -90,8 +90,8 @@
 
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.ListBox lstBxResults;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblString;
+        private System.Windows.Forms.Label lblInstructions;
     }
 }
 

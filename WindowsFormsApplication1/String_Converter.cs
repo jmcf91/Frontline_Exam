@@ -23,11 +23,17 @@ namespace WindowsFormsApplication1
         //button click from Form
         private void btnPrint_Click(object sender, EventArgs e)
         {
+            //prevents overflow of list.
+            if (lstBxResults.Items.Count > 1)
+            {
+                lstBxResults.Items.Clear();
+            }
+
             //original string
-            string strVariable = "(id,created,employee(id,firstname,employeeType(id), lastname),location)";
+            string strVariable = lblString.Text;
 
             //removes parens and commas
-            string tempString = strVariable.Replace('(', ' ').Replace(')', ' ').Replace(',',' ');
+            string tempString = strVariable.Replace('"',' ').Replace('(', ' ').Replace(')', ' ').Replace(',',' ');
 
             //puts string items into list and removes blank spaces
             formatList = tempString.Split(' ').Where(l => l != "").ToList();
